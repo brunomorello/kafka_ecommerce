@@ -42,6 +42,7 @@ public class FraudDetectorService {
         prop.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         prop.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         prop.setProperty(ConsumerConfig.GROUP_ID_CONFIG, FraudDetectorService.class.getSimpleName());
+        prop.setProperty(ConsumerConfig.MAX_POLL_RECORDS_CONFIG, "1");
         return prop;
     }
 }
