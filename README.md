@@ -9,3 +9,5 @@
   - bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe
 - list and describe topics
   - bin/kafka-consumer-groups.sh  --all-groups --bootstrap-server localhost:9092 --describe
+
+TODO: Apply mono repo and modules using gradle
